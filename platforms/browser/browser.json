@@ -1,0 +1,32 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "nus.iss.drone330"
+        },
+        "cordova-plugin-speechrecognition": {
+            "PACKAGE_NAME": "nus.iss.drone330"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "file": "plugins/cordova-plugin-speechrecognition/www/speechRecognition.js",
+            "id": "cordova-plugin-speechrecognition.SpeechRecognition",
+            "pluginId": "cordova-plugin-speechrecognition",
+            "merges": [
+                "window.plugins.speechRecognition"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-whitelist": "1.3.2",
+        "cordova-plugin-speechrecognition": "1.1.2"
+    }
+}

@@ -1,0 +1,102 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "cordova-plugin-speechrecognition",
+        "scope": null,
+        "escapedName": "cordova-plugin-speechrecognition",
+        "name": "cordova-plugin-speechrecognition",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "C:\\MTECH_SE_Projects\\DroneApp330\\node_modules"
+    ]
+  ],
+  "_from": "cordova-plugin-speechrecognition@latest",
+  "_id": "cordova-plugin-speechrecognition@1.1.2",
+  "_inCache": true,
+  "_location": "/cordova-plugin-speechrecognition",
+  "_nodeVersion": "7.4.0",
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/cordova-plugin-speechrecognition-1.1.2.tgz_1487852186657_0.8749005801510066"
+  },
+  "_npmUser": {
+    "name": "pbakondy",
+    "email": "pbakondy@gmail.com"
+  },
+  "_npmVersion": "4.0.5",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "cordova-plugin-speechrecognition",
+    "scope": null,
+    "escapedName": "cordova-plugin-speechrecognition",
+    "name": "cordova-plugin-speechrecognition",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-speechrecognition/-/cordova-plugin-speechrecognition-1.1.2.tgz",
+  "_shasum": "14503dac334e166a4cc4b87478b8ff72437e54ee",
+  "_shrinkwrap": null,
+  "_spec": "cordova-plugin-speechrecognition",
+  "_where": "C:\\MTECH_SE_Projects\\DroneApp330\\node_modules",
+  "author": {
+    "name": "Peter Bakondy"
+  },
+  "bugs": {
+    "url": "https://github.com/pbakondy/cordova-plugin-speechrecognition/issues"
+  },
+  "cordova": {
+    "id": "cordova-plugin-speechrecognition",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "dependencies": {},
+  "description": "Cordova Plugin for Speech Recognition",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "14503dac334e166a4cc4b87478b8ff72437e54ee",
+    "tarball": "https://registry.npmjs.org/cordova-plugin-speechrecognition/-/cordova-plugin-speechrecognition-1.1.2.tgz"
+  },
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "gitHead": "9302a31f7007a0180bd291e52da4130b48661924",
+  "homepage": "https://github.com/pbakondy/cordova-plugin-speechrecognition#readme",
+  "keywords": [
+    "cordova",
+    "speech",
+    "recognition",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "pbakondy",
+      "email": "pbakondy@gmail.com"
+    }
+  ],
+  "name": "cordova-plugin-speechrecognition",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pbakondy/cordova-plugin-speechrecognition.git"
+  },
+  "scripts": {},
+  "version": "1.1.2"
+}

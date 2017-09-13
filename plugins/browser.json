@@ -1,0 +1,18 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "nus.iss.drone330"
+        },
+        "cordova-plugin-speechrecognition": {
+            "PACKAGE_NAME": "nus.iss.drone330"
+        }
+    },
+    "dependent_plugins": {}
+}
