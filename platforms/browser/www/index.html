@@ -37,20 +37,21 @@
 		<!-- <link rel="stylesheet" type="text/css" href="css/ratchet.min.css"> -->
 		<script type="text/javascript" src="lib/jquery/dist/jquery.min.js"></script>
         <title>Hello World</title>
-		<script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>	
+		
     </head>
     <body>
 		<h1>FlyMyDrone</h1>
         <div class="app">
-			<input type="text" id="ip" placeholder="enter IP Address here" />
-			<button id="clickToConnect" class="btn btn-primary">Connect</button>
+            <!-- <input type="text" id="ip" placeholder="enter IP Address here" /> -->
+            <div class="blink"><h3>Tap and Go!</h3></div>
+			<button id="clickToConnect" class="btn btn-success">Connect</button>
             
             <div id="deviceready" class="blink">
                 <p class="event listening">Connecting to Device</p>
                 <p class="event received">Device is Ready</p>
             </div>
         </div>
-       
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>	
     </body>
 </html>

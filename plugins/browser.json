@@ -12,6 +12,18 @@
         },
         "cordova-plugin-speechrecognition": {
             "PACKAGE_NAME": "nus.iss.drone330"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "nus.iss.drone330"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "nus.iss.drone330"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "nus.iss.drone330"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "nus.iss.drone330"
         }
     },
     "dependent_plugins": {}

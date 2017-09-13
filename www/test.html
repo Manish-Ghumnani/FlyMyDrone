@@ -43,11 +43,11 @@
 		<h1>FlyMyDrone</h1>
         <div class="app">
 		
-			<div class="btn-direction">
-				<button id="up" style="font-size:24px"><i class="fa fa-hand-o-up"></i></button>
-				<button id="left" style="font-size:24px"><i class="fa fa-hand-o-left"></i></button>
-				<button id="right" style="font-size:24px"><i class="fa fa-hand-o-right"></i></button>
-				<button id="down" style="font-size:24px"><i class="fa fa-hand-o-down"></i></button>				
+			<div class="btn-group">
+				<button type="button" class="btn btn-info" id="up" style="font-size:24px"><i class="fa fa-hand-o-up"></i></button>
+				<button type="button" class="btn btn-info" id="left" style="font-size:24px"><i class="fa fa-hand-o-left"></i></button>
+				<button type="button" class="btn btn-info" id="right" style="font-size:24px"><i class="fa fa-hand-o-right"></i></button>
+				<button type="button" class="btn btn-info" id="down" style="font-size:24px"><i class="fa fa-hand-o-down"></i></button>				
 			</div>
 			
 			<div class="btn-group">
@@ -56,7 +56,15 @@
 				<button type="button" class="btn btn-primary" id="disarm">DISARM</button>
 				<button type="button" class="btn btn-primary" id="land">LAND</button>
 			</div> 
-            
+            <div>
+                Speak to your drone!
+            <button id="record" type="button" class="btn btn-default btn-sm">
+                    <span class="glyphicon glyphicon-record"></span> Speak
+            </button>
+            <button id="stream" type="button" class="btn btn-default btn-sm">
+                    <i class="fa fa-rss" aria-hidden="true"></i> Stream
+            </button>
+            </div>
             <div id="deviceready" class="blink">
                 <p class="event listening">Connecting to Device</p>
                 <p class="event received">Device is Ready</p>
