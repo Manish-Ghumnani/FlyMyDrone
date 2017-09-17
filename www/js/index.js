@@ -51,13 +51,13 @@ var app = {
 			
 		blink('.blink');
 
-		var ws = new WebSocket('ws://172.17.249.88:8080/','echo-protocol');
+		var ws = new WebSocket('ws://192.168.43.148:8080/','echo-protocol');
 
-		document.addEventListener("backbutton", onBackKeyDown, false);  
-		function onBackKeyDown(e) { 
-		   //e.preventDefault();
-		   ws.close();
-		} 
+		// document.addEventListener("backbutton", onBackKeyDown, false);  
+		// function onBackKeyDown(e) { 
+		//    //e.preventDefault();
+		//    ws.close();
+		// } 
 		$('#clickToConnect').click(function() {
 			//window.location = "test.html";
 			
@@ -67,7 +67,31 @@ var app = {
 				
 			}
 			ws.send("connected!");
-			window.location = "test.html";
+			var key = 1234;
+			// $('#key').on('change', function (){
+			// 	key = $(this).val();
+			// 	console.log(key);
+			// });
+			
+				if(key == $('#key').val()){
+					window.location = "test.html";
+				}
+				else{
+					console.log(key);
+					console.log("error connecting!");
+					var message = "Could not connect! Please ensure you entered the correct key!";
+					var title = "Oops!";
+					var buttonName = "Ok";
+				 
+					navigator.notification.alert(message, alertCallback, title, buttonName);
+
+					function alertCallback() {
+						console.log("Alert is Dismissed!");
+					 }
+				}
+			
+			
+			
 
 			ws.onerror = function(){
 				console.log("error connecting!");
@@ -90,7 +114,7 @@ var app = {
 		});
 		
 		$('#stream').click(function() {
-			var url = 'https://cordova.apache.org';
+			var url = 'http://192.168.43.148:8000/';
 			var target = '_blank';
 			var options = "location = yes"
 			var ref = cordova.InAppBrowser.open(url, target, options);
@@ -142,7 +166,7 @@ var app = {
 							ws.send(drone_commands[i]);
 						}
 					}
-					ws.send(result);
+					//ws.send(result);
 				}, function(err){
 					console.error(err);
 				}, {
