@@ -63,7 +63,7 @@ var app = {
 			
 		blink('.blink');
 
-		var ws = new WebSocket('ws://172.17.249.88:8080/','echo-protocol');
+		var ws = new WebSocket('ws://192.168.1.42:8080/','echo-protocol');
 
 		// document.addEventListener("backbutton", onBackKeyDown, false);  
 		// function onBackKeyDown(e) { 
