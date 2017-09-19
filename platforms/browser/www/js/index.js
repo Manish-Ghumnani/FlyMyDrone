@@ -41,6 +41,18 @@ var app = {
 		// var address = proto.concat(ip);
 		// var url = address.concat(port);
 		// console.log(url);
+
+		document.addEventListener("offline", onOffline, false);
+		
+		function onOffline() {
+			// Handle the offline event
+			navigator.notification.alert('You are not connected to the Internet!', alertNoInternet, 'Oops!','Okay');
+
+			function alertNoInternet(){
+				console.log("No internet!");
+			}
+		}
+
 		function blink(selector){
 			$(selector).fadeOut('slow', function(){
 				$(this).fadeIn('slow', function(){
@@ -51,7 +63,7 @@ var app = {
 			
 		blink('.blink');
 
-		var ws = new WebSocket('ws://192.168.43.148:8080/','echo-protocol');
+		var ws = new WebSocket('ws://172.17.249.88:8080/','echo-protocol');
 
 		// document.addEventListener("backbutton", onBackKeyDown, false);  
 		// function onBackKeyDown(e) { 

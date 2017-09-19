@@ -42,32 +42,32 @@
     <body>
 		<h1>FlyMyDrone</h1>
         <div class="app">
-		
-			<div class="btn-group">
-				<button type="button" class="btn btn-info" id="up" style="font-size:24px"><i class="fa fa-hand-o-up"></i></button>
-				<button type="button" class="btn btn-info" id="left" style="font-size:24px"><i class="fa fa-hand-o-left"></i></button>
-				<button type="button" class="btn btn-info" id="right" style="font-size:24px"><i class="fa fa-hand-o-right"></i></button>
-				<button type="button" class="btn btn-info" id="down" style="font-size:24px"><i class="fa fa-hand-o-down"></i></button>				
+            
+			<div class="btn-direction">
+				&nbsp; <button type="button" class="btn btn-info" id="up" style="font-size:24px"><i class="fa fa-hand-o-up"></i></button><br><br>
+				<button type="button" class="btn btn-info" id="left" style="font-size:24px"><i class="fa fa-hand-o-left"></i></button> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				<button type="button" class="btn btn-info" id="right" style="font-size:24px"><i class="fa fa-hand-o-right"></i></button><br><br>
+				&nbsp; <button type="button" class="btn btn-info" id="down" style="font-size:24px"><i class="fa fa-hand-o-down"></i></button><br><br>			
 			</div>
 			
-			<div class="btn-group">
-				<button type="button" class="btn btn-primary" id="arm">ARM</button>
-				<button type="button" class="btn btn-primary" id="take-off">TAKE-OFF</button>
-				<button type="button" class="btn btn-primary" id="disarm">DISARM</button>
-				<button type="button" class="btn btn-primary" id="land">LAND</button>
+			<div class="btn-command">
+				<button type="button" class="btn btn-primary" id="arm">ARM</button> &nbsp; &nbsp; &nbsp; &nbsp;
+				<button type="button" class="btn btn-primary" id="take-off">DISARM</button><br><br>
+				<button type="button" class="btn btn-primary" id="disarm">TAKE-OFF</button> &nbsp; &nbsp; &nbsp;
+				<button type="button" class="btn btn-primary" id="land">LAND</button><br> <br>
 			</div> 
             <div>
                 Speak to your drone!
-            <button id="record" type="button" class="btn btn-default btn-sm">
+            <button id="record" type="button" class="btn btn-default btn-md">
                     <span class="glyphicon glyphicon-record"></span> Speak
             </button>
-            <button id="stream" type="button" class="btn btn-default btn-sm">
+            <button id="stream" type="button" class="btn btn-default btn-md">
                     <i class="fa fa-rss" aria-hidden="true"></i> Stream
             </button>
             </div>
             <div id="deviceready" class="blink">
                 <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
+                <p class="event received">You are connected!</p>
             </div>
         </div>
         <script type="text/javascript" src="cordova.js"></script>
