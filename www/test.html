@@ -1,22 +1,4 @@
 <!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
 <html>
     <head>
         <!--
@@ -32,32 +14,40 @@
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
 		<link rel="stylesheet" type="text/css" href="lib/bootstrap/dist/css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css">
 		<script type="text/javascript" src="lib/jquery/dist/jquery.min.js"></script>
 		<script type="text/javascript" src="lib/bootstrap/dist/js/bootstrap.js"></script>
-        <title>Hello World</title>
+        <title>NUS ISS Drone - Controls</title>
+        <style>
+            #left{
+                margin-right:48px;
+            }
+            .btn-command button {
+                width: 90px;
+            }
+        </style>
     </head>
     <body>
-		<h1>FlyMyDrone</h1>
-        <div class="app">
-            
+		<img src="./img/drone.png" width="100%" height="100%";/>
+		<h1 align="center">NUS ISS Autonomous Drone</h1>
+        <div align="center">            
 			<div class="btn-direction">
-				&nbsp; <button type="button" class="btn btn-info" id="up" style="font-size:24px"><i class="fa fa-hand-o-up"></i></button><br><br>
-				<button type="button" class="btn btn-info" id="left" style="font-size:24px"><i class="fa fa-hand-o-left"></i></button> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-				<button type="button" class="btn btn-info" id="right" style="font-size:24px"><i class="fa fa-hand-o-right"></i></button><br><br>
-				&nbsp; <button type="button" class="btn btn-info" id="down" style="font-size:24px"><i class="fa fa-hand-o-down"></i></button><br><br>			
+				<button type="button" class="btn btn-info" id="up" style="font-size:24px"><i class="glyphicon glyphicon-arrow-up"></i></button><br>
+				<button type="button" class="btn btn-info" id="left" style="font-size:24px;"><i class="glyphicon glyphicon-arrow-left"></i></button>
+				<button type="button" class="btn btn-info" id="right" style="font-size:24px"><i class="glyphicon glyphicon-arrow-right"></i></button><br>
+				<button type="button" class="btn btn-info" id="down" style="font-size:24px"><i class="glyphicon glyphicon-arrow-down"></i></button><br><br>			
 			</div>
 			
+			
 			<div class="btn-command">
-				<button type="button" class="btn btn-primary" id="arm">ARM</button> &nbsp; &nbsp; &nbsp; &nbsp;
-				<button type="button" class="btn btn-primary" id="disarm">DISARM</button><br><br>
-				<button type="button" class="btn btn-primary" id="take-off">TAKE-OFF</button> &nbsp; &nbsp; &nbsp;
-				<button type="button" class="btn btn-primary" id="land">LAND</button><br> <br>
-			</div> 
-            <div>
-                Speak to your drone!
+				<button type="button" class="btn btn-primary" id="arm">ARM</button>
+				<button type="button" class="btn btn-primary" id="disarm">DISARM</button> 
+				<button type="button" class="btn btn-primary" id="take-off">TAKE-OFF</button>
+				<button type="button" class="btn btn-primary" id="land">LAND</button>
+            </div> 
+            <br/>
+            <div align="center">
             <button id="record" type="button" class="btn btn-default btn-md">
                     <span class="glyphicon glyphicon-record"></span> Speak
             </button>
@@ -66,10 +56,12 @@
             </button>
             </div>
             <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
                 <p class="event received">You are connected!</p>
             </div>
         </div>
+		<div align = "center">
+		<img src="./img/nusiss.png" width="25%" height="25%" align="middle";/>
+		</div>	
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
     </body>
