@@ -19,25 +19,34 @@
 		<script type="text/javascript" src="lib/jquery/dist/jquery.min.js"></script>
 		<script type="text/javascript" src="lib/bootstrap/dist/js/bootstrap.js"></script>
         <title>NUS ISS Drone - Controls</title>
+        <style>
+            #left{
+                margin-right:48px;
+            }
+            .btn-command button {
+                width: 90px;
+            }
+        </style>
     </head>
     <body>
 		<img src="./img/drone.png" width="100%" height="100%";/>
 		<h1 align="center">NUS ISS Autonomous Drone</h1>
         <div align="center">            
 			<div class="btn-direction">
-				&nbsp; <button type="button" class="btn btn-info" id="up" style="font-size:24px"><i class="glyphicon glyphicon-arrow-up"></i></button><br><br>
-				<button type="button" class="btn btn-info" id="left" style="font-size:24px"><i class="glyphicon glyphicon-arrow-left"></i></button> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-				<button type="button" class="btn btn-info" id="right" style="font-size:24px"><i class="glyphicon glyphicon-arrow-right"></i></button><br><br>
-				&nbsp; <button type="button" class="btn btn-info" id="down" style="font-size:24px"><i class="glyphicon glyphicon-arrow-down"></i></button><br><br>			
+				<button type="button" class="btn btn-info" id="up" style="font-size:24px"><i class="glyphicon glyphicon-arrow-up"></i></button><br>
+				<button type="button" class="btn btn-info" id="left" style="font-size:24px;"><i class="glyphicon glyphicon-arrow-left"></i></button>
+				<button type="button" class="btn btn-info" id="right" style="font-size:24px"><i class="glyphicon glyphicon-arrow-right"></i></button><br>
+				<button type="button" class="btn btn-info" id="down" style="font-size:24px"><i class="glyphicon glyphicon-arrow-down"></i></button><br><br>			
 			</div>
 			
 			
 			<div class="btn-command">
-				<button type="button" class="btn btn-primary" id="arm">ARM</button> &nbsp; &nbsp; &nbsp; &nbsp;
-				<button type="button" class="btn btn-primary" id="disarm">DISARM</button><br><br>
-				<button type="button" class="btn btn-primary" id="take-off">TAKE-OFF</button> &nbsp; &nbsp; &nbsp;
-				<button type="button" class="btn btn-primary" id="land">LAND</button><br> <br>
-			</div> 
+				<button type="button" class="btn btn-primary" id="arm">ARM</button>
+				<button type="button" class="btn btn-primary" id="disarm">DISARM</button> 
+				<button type="button" class="btn btn-primary" id="take-off">TAKE-OFF</button>
+				<button type="button" class="btn btn-primary" id="land">LAND</button>
+            </div> 
+            <br/>
             <div align="center">
             <button id="record" type="button" class="btn btn-default btn-md">
                     <span class="glyphicon glyphicon-record"></span> Speak
