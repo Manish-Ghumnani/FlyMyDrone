@@ -35,12 +35,12 @@ var app = {
 		};*/
 		
 		//var WebSocket = require('websocket').w3cwebsocket;
-		// var proto = "ws://";
-		// var port = ":8080/";
-		// var ip = $('#ip').val();
-		// var address = proto.concat(ip);
-		// var url = address.concat(port);
-		// console.log(url);
+		var proto = "ws://";
+		var port = ":8085/websocket";
+		var ip = '192.168.89.101';
+		var address = proto.concat(ip);
+		var url = address.concat(port);
+		console.log(url);
 
 		document.addEventListener("offline", onOffline, false);
 		
@@ -63,7 +63,8 @@ var app = {
 			
 		blink('.blink');
 
-		var ws = new WebSocket('ws://192.168.1.42:8080/','echo-protocol');
+		var ws = new WebSocket('ws://192.168.89.101:8085/websocket');
+		
 
 		// document.addEventListener("backbutton", onBackKeyDown, false);  
 		// function onBackKeyDown(e) { 
@@ -72,13 +73,12 @@ var app = {
 		// } 
 		$('#clickToConnect').click(function() {
 			//window.location = "test.html";
-			
+			ws = new WebSocket(url);
 			ws.onopen = function()
 			{
 				alert("connected to your drone");
-				
 			}
-			ws.send("connected!");
+			//ws.send("connected!");
 			var key = 1234;
 			// $('#key').on('change', function (){
 			// 	key = $(this).val();
@@ -87,6 +87,7 @@ var app = {
 			
 				if(key == $('#key').val()){
 					window.location = "test.html";
+					
 				}
 				else{
 					console.log(key);

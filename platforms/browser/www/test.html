@@ -28,7 +28,7 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;  connect-src ws://*:8080 http://*:8000">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;  connect-src ws://*:8085 http://*:8000">
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
@@ -45,15 +45,15 @@
             
 			<div class="btn-direction">
 				&nbsp; <button type="button" class="btn btn-info" id="up" style="font-size:24px"><i class="fa fa-hand-o-up"></i></button><br><br>
-				<button type="button" class="btn btn-info" id="left" style="font-size:24px"><i class="fa fa-hand-o-left"></i></button> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				<button type="button" class="btn btn-info" id="left" style="font-size:24px"><i class="fa fa-hand-o-left"></i></button> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 				<button type="button" class="btn btn-info" id="right" style="font-size:24px"><i class="fa fa-hand-o-right"></i></button><br><br>
 				&nbsp; <button type="button" class="btn btn-info" id="down" style="font-size:24px"><i class="fa fa-hand-o-down"></i></button><br><br>			
 			</div>
 			
 			<div class="btn-command">
 				<button type="button" class="btn btn-primary" id="arm">ARM</button> &nbsp; &nbsp; &nbsp; &nbsp;
-				<button type="button" class="btn btn-primary" id="take-off">DISARM</button><br><br>
-				<button type="button" class="btn btn-primary" id="disarm">TAKE-OFF</button> &nbsp; &nbsp; &nbsp;
+				<button type="button" class="btn btn-primary" id="disarm">DISARM</button><br><br>
+				<button type="button" class="btn btn-primary" id="take-off">TAKE-OFF</button> &nbsp; &nbsp; &nbsp;
 				<button type="button" class="btn btn-primary" id="land">LAND</button><br> <br>
 			</div> 
             <div>
