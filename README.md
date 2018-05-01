@@ -8,4 +8,11 @@ A Cordova based hybrid app to send commands to your copter!
   
 ## Screen shots
 
+### Loading Screen
+![alt text](/screens/loading_screen.jpg "Title")
 
+### Login Screen
+![alt text](/screens/login_screen.jpg "Title")
+
+### Controls Screen
+![alt text](/screens/controls_screen.jpg "Title")
