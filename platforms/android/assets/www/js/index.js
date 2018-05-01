@@ -63,17 +63,17 @@ var app = {
 			
 		blink('.blink');
 
-		var ws = new WebSocket('ws://192.168.89.101:8085/websocket');
+		var ws = new WebSocket('ws://192.168.201.3:8085/websocket');
 		
 
 		// document.addEventListener("backbutton", onBackKeyDown, false);  
-		// function onBackKeyDown(e) { 
+		// function onBackKeyDown(e) { 1
 		//    //e.preventDefault();
 		//    ws.close();
 		// } 
 		$('#clickToConnect').click(function() {
 			//window.location = "test.html";
-			ws = new WebSocket(url);
+			//ws = new WebSocket(url);
 			ws.onopen = function()
 			{
 				alert("connected to your drone");
@@ -127,7 +127,7 @@ var app = {
 		});
 		
 		$('#stream').click(function() {
-			var url = 'http://192.168.43.148:8000/';
+			var url = 'http://192.168.201.3:8000/';
 			var target = '_blank';
 			var options = "location = yes"
 			var ref = cordova.InAppBrowser.open(url, target, options);
@@ -164,6 +164,18 @@ var app = {
 
 		$('#disarm').click(function() {
 			ws.send("disarm");
+		});
+		
+		$('#selfie').click(function() {
+			ws.send("selfie");
+		});
+		
+		$('#count').click(function() {
+			ws.send("facecount");
+		});
+		
+		$('#gesture').click(function() {
+			ws.send("gesture");
 		});
 
 		$('#record').click(function() {
@@ -223,11 +235,11 @@ var app = {
     // Update DOM on a Received Event
     receivedEvent: function(id) {
         var parentElement = document.getElementById(id);
-        var listeningElement = parentElement.querySelector('.listening');
-        var receivedElement = parentElement.querySelector('.received');
+        // var listeningElement = parentElement.querySelector('.listening');
+        // var receivedElement = parentElement.querySelector('.received');
 
-        listeningElement.setAttribute('style', 'display:none;');
-        receivedElement.setAttribute('style', 'display:block;');
+        // listeningElement.setAttribute('style', 'display:none;');
+        // receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
     }
